@@ -1,0 +1,9 @@
+services:
+  exercicios-c-unisenaipr-20260826:
+    build: .
+    container_name: exercicios-c-unisenaipr-20260826
+    stdin_open: true
+    tty: true
+    volumes:
+      - .:/app
+      - /app/build
