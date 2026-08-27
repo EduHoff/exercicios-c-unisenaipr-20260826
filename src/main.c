@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include "ds.h"
+#include "domain.h"
 #include "utils.h"
 
 int main(void) {
@@ -18,12 +18,7 @@ int main(void) {
     ger_ti->first_child = dev;
     ger_vendas->first_child = analista;
 
-    printf("Cargo: %s\n", (char*) diretor->data);
-    printf("Cargo: %s\n", (char*) ger_ti->data);
-    printf("Cargo: %s\n", (char*) ger_vendas->data);
-    printf("Cargo: %s\n", (char*) dev->data);
-    printf("Cargo: %s\n", (char*) analista->data);
-
+    print_organogram(diretor);
 
     free_tree(diretor);
     return 0;

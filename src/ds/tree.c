@@ -2,7 +2,7 @@
 #include "ds.h"
 
 // Função para criar estrutura inicial de uma árvore genérica
-TreeNode* create_node(void* data){
+TreeNode* create_node(void* data) {
     TreeNode* new_node = (TreeNode*) malloc(sizeof(TreeNode));
 
     if (new_node == NULL) {
@@ -17,8 +17,8 @@ TreeNode* create_node(void* data){
 }
 
 // Função para liberar alocação da árvore genérica
-void free_tree(TreeNode* root){
-    if(root == NULL){
+void free_tree(TreeNode* root) {
+    if(root == NULL) {
         return;
     }
 
